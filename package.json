@@ -1,0 +1,21 @@
+{                                                                                                                                                    
+  "name": "ping-monitor-pushbullet",                                                                                                                 
+  "version": "0.0.1",                                                                                                                                
+  "description": "Website monitor using `ping-monitor`",                                                                                             
+  "main": "uptime-monitor.js",                                                                                                                       
+  "repository": "https://github.com/drweaver/...",                                                                                                   
+  "author": "Shane Weaver",                                                                                                                          
+  "keywords": [                                                                                                                                      
+    "pushbullet",                                                                                                                                    
+    "monitor"                                                                                                                                        
+  ],                                                                                                                                                 
+  "dependencies": {                                                                                                                                  
+    "node-monitor": "git://github.com/drweaver/node-monitor#master",                                                                                 
+    "pushbullet": "~1.4.2",                                                                                                                          
+    "async": "~0.9.0"                                                                                                                                
+  },                                                                                                                                                 
+  "scripts": {                                                                                                                                       
+    "start": "nohup node uptime-monitor.js > /dev/null &  echo pid=$!",                                                                              
+    "stop": "pkill -xfe node\\ uptime-monitor.js || true"                                                                                            
+  }                                                                                                                                                  
+}            
